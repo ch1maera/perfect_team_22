@@ -9,7 +9,7 @@ from sqlalchemy import MetaData, Table
 
 def main(argv):
 
-    src_path = "C:/Users/Retribution/Documents/Out of the Park Developments/OOTP Baseball 22/saved_games/"
+    src_path = '' #enter saved_games folder here
     p = Path(src_path)
     now = time.time()
     abbr = levels.level_map(argv[0])
