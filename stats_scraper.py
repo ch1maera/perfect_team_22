@@ -2,7 +2,7 @@ import sys
 import time
 from datetime import datetime
 from bs4 import BeautifulSoup
-from utilities import database, levels
+from utilities import database, levels  # these are just things I use in other scripts
 from pathlib import Path
 from sqlalchemy import MetaData, Table
 
