@@ -43,6 +43,8 @@ def main(argv):
             except ValueError:
                 print("Something wrong with this report. Moving to the next one.")
 
+    connection.close()
+    
 
 def parse_report(src_path):
     # this whole method is janky af and could easily break if I added another column to the export
@@ -126,8 +128,6 @@ def insert_records(con, metadata, engine, stats, abbr):
         con.execute(db_table.insert(), stats[i])
 
     print("Inserting completed")
-
-    con.close()
 
 
 if __name__ == "__main__":
